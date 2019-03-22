@@ -20,39 +20,39 @@
 }
 
 
-\author{\IEEEauthorblockN{1\textsuperscript{st} Jianzhong Zhang}
-\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
-\textit{name of organization (of Aff.)}\\
-City, Country \\
-email address}
-\and
-\IEEEauthorblockN{2\textsuperscript{nd} Rongkang Wang}
-\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
-\textit{name of organization (of Aff.)}\\
-City, Country \\
-email address}
-\and
-\IEEEauthorblockN{3\textsuperscript{rd} Mingxin Yin}
-\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
-\textit{name of organization (of Aff.)}\\
-City, Country \\
-email address}
-\and
-\IEEEauthorblockN{4\textsuperscript{th} Ningjia Fu}
-\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
-\textit{name of organization (of Aff.)}\\
-City, Country \\
-email address}
-\and
-\IEEEauthorblockN{5\textsuperscript{th} Yu Zhang}
-\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
-\textit{name of organization (of Aff.)}\\
-City, Country \\
-email address}
-}
+% \author{\IEEEauthorblockN{1\textsuperscript{st} Jianzhong Zhang}
+% \IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+% \textit{name of organization (of Aff.)}\\
+% City, Country \\
+% email address}
+% \and
+% \IEEEauthorblockN{2\textsuperscript{nd} Rongkang Wang}
+% \IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+% \textit{name of organization (of Aff.)}\\
+% City, Country \\
+% email address}
+% \and
+% \IEEEauthorblockN{3\textsuperscript{rd} Mingxin Yin}
+% \IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+% \textit{name of organization (of Aff.)}\\
+% City, Country \\
+% email address}
+% \and
+% \IEEEauthorblockN{4\textsuperscript{th} Ningjia Fu}
+% \IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+% \textit{name of organization (of Aff.)}\\
+% City, Country \\
+% email address}
+% \and
+% \IEEEauthorblockN{5\textsuperscript{th} Yu Zhang}
+% \IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+% \textit{name of organization (of Aff.)}\\
+% City, Country \\
+% email address}
+% }
 
 \author{
-\IEEEauthorblockN{Jianzhong Zhang, Rongkang Wang, Mingxin Yin, Ningjia Fu and Yu Zhang}
+\IEEEauthorblockN{}%Jianzhong Zhang, Rongkang Wang, Mingxin Yin, Ningjia Fu and Yu Zhang}
 \IEEEauthorblockA{\textit{Laboratory of Network and Information Security} \\
 \textit{College of Computer and Control Engineering, Nankai University}\\
 Tianjin, China \\
@@ -86,9 +86,9 @@ Considering identification real-time performance, we separate the VoIP entire fl
 
 Our contributions are summarized as follow: 1) We designed CLNN model to extract features for voice flows, the CLNN model is able to extract features in both time and frequency domains, the extracted features are more reliable than extracted by humans. 2) We can identify a VoIP flow in acceptable time, we train subflow dataset instead of entire flow, it is a necessary condition for real-time identification. 3) We designed a real-time identification system to be deployed in large-scale networks, administrators can intercept VoIP traffic according to identification results.
 
-The remainder of this paper is structured as follows. In section \ref{sec:relatedwork}, we describe the previously published related works.  In section \ref{sec:methodology}, there is a brief introduction to several methods used in our work.
+The remainder of this paper is structured as follows. In section \ref{sec:relatedwork}, we describe the previously published related works.  In section \ref{sec:methodology}, there are main methods used in our work.
 %Then we present the architecture of our real-time identification system in section \ref{sec:architecture}.
-In sections \ref{sec:trafficcollectionandprocessing}, \ref{sec:learningusingdeeplearningmodel} and \ref{sec:realtimeidentification}, we describe the dataset and CLNN models used for learning, and how to perform real-time identification. The performance evaluation is shown in section \ref{sec:performanceevaluation}. The conclusion is shown in section \ref{sec:conclusion}.
+In section \ref{sec:algorithms}, we introduce the algorithms used in this paper. The performance evaluation is shown in section \ref{sec:performanceevaluation}. The conclusion is shown in section \ref{sec:conclusion}.
 
 
 
@@ -143,7 +143,7 @@ VoIP applications use RTP to transfer data, RTP typically runs over UDP. What we
 
 \subsection{Offline Training}
 \label{sec:offlinetraining}
-In offline training phase, we adopt unsupervised learning method to extract features, which are used in online identification phase. In order to verify VoIP flows carry the features supporting identification, we did some basic researches. Firstly, VoIP applications will select appropriate codecs based on network conditions or channel types, and the codecs supported by each VoIP application are different. The codecs we found in our dataset lists in Table~\ref{tab:codecs}. The payload type in RTP header indicates the codec, this basic network feature can be used to identify VoIP traffic. Secondly, different codecs will occupy different bandwidth, in the meantime, different packing periods make VoIP applications to have different sending rates. Both PSD \cite{22} and entropy \cite{4} are related to codecs and packing times. In addition, ITD(Interarrival Time Distribution) and PTD(Packet Type Distribution) are different for each application. Except these features, there are many other features can be used for identifying.
+In offline training phase, we adopt supervised learning method to extract features, which are used in online identification phase. In order to verify VoIP flows carry the features supporting identification, we did some basic researches. Firstly, VoIP applications will select appropriate codecs based on network conditions or channel types, and the codecs supported by each VoIP application are different. The codecs we found in our dataset lists in Table~\ref{tab:codecs}. The payload type in RTP header indicates the codec, this basic network feature can be used to identify VoIP traffic. Secondly, different codecs will occupy different bandwidth, in the meantime, different packing periods make VoIP applications to have different sending rates. Both PSD \cite{22} and entropy \cite{4} are related to codecs and packing times. In addition, ITD(Interarrival Time Distribution) and PTD(Packet Type Distribution) are different for each application. Except these features, there are many other features can be used for identifying.
 
 \begin{table}[htbp]
   \caption{Codecs used by VoIP applications.}
@@ -175,155 +175,15 @@ In order to design a model extracting the most useful features for VoIP flow ide
 \end{center}
 \end{figure}
 
-
+The way to extract features for entire VoIP flows cannot be used for real-time VoIP identification, we split entire VoIP flows into subflows. One subflow is consist of $k$ continuous VoIP packets from the same channel, we use $subflow^k$ denoting one in the following sections. We design a sampling method that uses sliding window to select $subflow^k$ into training dataset, the sliding window can select its next step length randomly. This method not only promises the dataset is uniform but also reduces the training work. 
 
 
 
 \subsection{Online Identification}
 \label{sec:onlineidentification}
+The offline training work is the basis of online identification, the features we get in offline training are used for identifying VoIP flows. In online identification phase, we parse the \{srcIP, dstIP, srcPort, dstPort\} in IP and UDP header, the quad-tuple is used to separate flows as a key. We generate a $subflow^k$ for each flow with their specific key, then we identify the $subflow^k$ with the online identification system. For each flow with specific key, the identification result is saved as the value of the key. The \{key, value\} is saved into our database, we can identify the following traffic with their quad-tuple.
 
-%In this paper, we extract features for subflows (we use $subflow^k$ to denote one in the following) which consist of several continuous VoIP packets from a VoIP flow. In real-time identification phase, we build a $subflow^k$ after a connection established and apply the features to identify the $subflow^k$.
-
-
-In order to identify VoIP flows timely, we extract features for subflows which consist of several continuous VoIP packets from a VoIP flow(we use $subflow^k$ denotes that one subflow below, $k$ is the number of packtes $subflow^k$ includes). The first thing is to build training dataset for subflows, constructing and labeling dataset are troublesome for researchers. In order to get raw VoIP traffic, we deploy several computers installed with VoIP applications. To label them accurately, we adopt some traffic capture tools which are process-based. They can help us get pure raw traffic for each application, so we can label traffic using the name of VoIP applications. Next problem is how to construct our training dataset with raw traffic data and ensure the dataset is uniform as soon as possible. We design a sampling method that uses sliding window to select $subflow^k$ into training dataset, the next step is randomized in [1, k]. This method not only promises the dataset is uniform but also reduces the training work. In order to identify non-VoIP traffic, we collect non-VoIP flows including video flows and real-time game flows, etc. Actually, non-VoIP traffic can also be classified more detailed, in our work, they will all be identified as non-VoIP traffic.
-
-
-
-%1) Whether the number of packets generated by VoIP applications in a limited time can support the identification. 2) Whether RTP/RTCP flows carry the features that support identification. We collected traffic and did analysis for 10 VoIP applications. According to our investigation, the number of packets generated by VoIP applications can reach tens or even hundreds in a second, which means we can use hundreds of packets for feature identification. Moreover, we investigate 2 features, PSD \cite{22} and codec \cite{4}. For PSD, there are 8 VoIP applications (AltCall, Jumblo, Xlite, Zoiper UUCall, Eyebeam, ExpressTalk and Bria) have constant PSD for voice transmission, 2 VoIP applications (Skype and KCCall) use variable-length packets. The length number used by Skype is completely random but limited to a range. For codecs, different routes of VoIP connections will use different codecs. The codecs we found list in Table~\ref{tab:codecs}, there are many subtypes for every codec. Except these 2 main features, We expect deep learning will extract more features such as inter-arrival time, total duration, etc. And more features cannot be observed by humans.
-
-
-%According to our investigation, the number of packets generated by VoIP applications can reach tens or even hundreds in a second, which proves our method is feasible. We collected traffic and did analysis for 10 VoIP applications.
-
-%In order to identify VoIP flows at the early age of the connection establishment, we extract the features for sub-flows . Most of the VoIP applications use RTP/RTCP protocol to transfer data, the ability to identify a single packet is low. In this paper, we extract features for an object (we use $subflow^k$ to denote it in the following) which consists of several continuous VoIP packets. According to our investigation, the number of packets generated by VoIP applications can reach tens or even hundreds in a second, which proves our method is feasible. We did some researches for 10 VoIP applications. According to our analysis, there are 8 VoIP applications (AltCall, Jumblo, Xlite, Zoiper UUCall, Eyebeam, ExpressTalk and Bria) using constant-length packets for transmission. 2 VoIP applications (Skype and KCCall) use variable-length packets. The length number used by Skype is completely random. About KCCall, it only limits to 2 values. Most of them use single payload type except KCCall which uses 2 types. The above analysis can divide 10 VoIP applications into several classes, our goal is to use deep learning techniques to extract as many features as possible for $subflow^k$, including basic features such as length of packet, type of payload, and other features cannot be observed by humans. The features learned by deep learning can classify them more detailed.
-
-%For extracting features for, we apply supervised learning method to train the dataset. Constructing and labeling dataset is troublesome for researchers. In order to get raw VoIP traffic, we deploy several computers installed with VoIP applications in real network. To label them accurately, we adopt some traffic capture tools which are process-based. They can help us get pure raw traffic for each application, so we can label traffic using the name of VoIP application. Next problem is how to construct our training dataset with raw traffic data and ensure the dataset is uniform as soon as possible. We design a sampling method that uses sliding window to select $subflow^k$ into training dataset, the next step is randomized in [1, k]. This method not only promises the dataset is uniform but also reduces the training works. In order to identify non-VoIP traffic, we collected non-VoIP flows including video flows and real-time game flows, etc. Actually, non-VoIP traffic can also be classified more detailed, in our works, they will all be classified as non-VoIP traffic.
-
-In order to design a deep learning model for training phase, we studied several of the most popular deep learning models. We considered factors such as time-consuming, feature extraction and so on, we designed a CLNN model. The flows generated by VoIP applications contain important temporal features, owing to LSTM is good at temporal modeling, we embed LSTM into CNN model to improve the performance of mining temporal features. With the CNN's ability to reduce frequency variations, CLNN model can extract the most useful features in both time and frequency domains. The training is carried out on a machine with 24G RAM and a quad-core Intel processor of 3.6GHz. The machine is equipped with NVIDIA GeForce GTX 1070(8GB) to accelerate computing. CUDA Toolkit 8.0 is used in our experiment to support parallel computing.
-
-%In order to select a suitable deep learning model for our training phase, we compared several classic deep neural network models. We considered factors such as hardware requirements and time-consuming and so on, we selected AlexNet to training our dataset finally. The training is carried out on a machine with 24G RAM and a quad-core Intel processor of 3.6GHz. The machine is equipped with NVIDIA GeForce GTX 1070(8GB) to accelerate computing. CUDA Toolkit 8.0 is used in our experiment to support parallel computing.
-
-Collecting raw traffic data, constructing dataset and training dataset are offline, they are the basis for identifying traffic online in real time. In online real-time identification phase, we parse the \{srcIP, dstIP, srcPort, dstPort\} in IP and UDP header, the quad-tuple will be used to separate flows as a key. We generate a $subflow^k$ for each flow with their specific key, then we identify the $subflow^k$ with the online identification system. For each flow with specific key, the identification result will be saved as the value of the key. The \{key, value\} is saved into our database, we can identify the following traffic with their quad-tuple.
-%the key to generate a $subflow^k$. We identify the $subflow^k$ with the offline identification model. The identification result will be saved as the value The following traffic whose key equals we use <srcIP, dstIP, srcPort, dstPort> as key, we capture $subflow^k$ following the quad-tuple. After we get the identification result for a $subflow^k$,
-%About training, we apply several classic deep neural network models to train our dataset. For images, the identification rate of deep neural networks has exceeded the rate of human eyes. We believe that deep neural network can achieve good result in VoIP identification field.
-
-%\section{Architecture}
-%\label{sec:architecture}
-%In this section, we introduce the architecture of our real-time identification system. There are 2 main phases in our architecture, offline training and online identification. We introduce the architecture of these 2 phases separately.
-%In this section, we introduce the architecture of real-time identification system and give a basic overview of the 2 main phases in the architecture. There are 2 main phases in our architecture, training phase and identification phase.
-%Our architecture is shown in Figure~\ref{fig:architecture}.
-
-%\begin{figure}[htp]
-%\begin{center}
-%\includegraphics[width=0.47\textwidth]{architecture.eps}
-%\caption{Architecture of identification system.}\label{fig:architecture}
-%\end{center}
-%\end{figure}
-
-%\subsection{Offline Training}
-%In offline training phase, we extract features for 11 kinds of flows, which include 10 kinds of VoIP application flows and non-VoIP flows. Our goal is to maximize the accuracy of training and validation data. There are mainly 2 procedures, data preprocessing and model training. In preprocessing procedure, we random select $subflow^k$ with sliding window and label them with their application name. These $subflow^k$ and their labels will be processed into matrices as input of CLNN model. In training procedure, it is going to minimize the loss function to find an optimal function for identification. The output of training procedure is the feature set that we will use in real-time identification phase. We use the feature set to train VoIP application classifier, which is the final component of online identification phase.
-%Offline training detailed in Figure~\ref{fig:offline_architecture.eps}.
-
-%\begin{figure}[htp]
-%\begin{center}
-%\includegraphics[width=0.45\textwidth]{offline_architecture.eps}
-%\caption{Architecture of offline training.}\label{fig:offline_architecture.eps}
-%\end{center}
-%\end{figure}
-
-%\subsection{Online Identification}
-%Online identification is based on the output of offline training. In this phase, we build flows for traffic in large-scale network. We parse IP address and UDP port as its key for each packet. We maintain a key-value database for these keys. If the value of the corresponding key has been set, the value is the identification result of the packet. If the value is empty, we search the key in pending flows database and add this packet into corresponding pending flow. When a pending flow is ready to be identified, it will be identified by identification model and set the identification result in database.  %Figure~\ref{fig:online_architecture.eps},
-
-%As the Figure~\ref{fig:architecture} shows, the number of pending flow key\_3 reaches k, it is ready to be identified. We show 2 captured packets whose keys are key\_1 and key\_2, packet corresponding to key\_1 will be real-time identified by querying the database, packet corresponding to key\_2 will be appended into its pending flow.
-
-%Identification phase is the final part of our system. In this phase, we use identification model to identify the $subflow^k$ captured in real-time. This phase includes 3 procedures, inspection of VoIP traffic, preprocessing and identification. In inspection procedure, we detect beginning of a VoIP connection. After this, we capture a $subflow^k$ and convert it to matrix in preprocessing procedure. Then we input the matrix into identification model, the identification model give us the result which is a specific VoIP application.
-%\begin{figure}[htp]
-%\begin{center}
-%\includegraphics[width=0.45\textwidth]{online_architecture.eps}
-%\caption{Architecture of online identification.}\label{fig:online_architecture.eps}
-%\end{center}
-%\end{figure}
-
-\section{Traffic Collection and Processing}
-\label{sec:trafficcollectionandprocessing}
-Traffic collection is the beginning of all of the works. In order to get raw traffic of 10 VoIP applications mentioned above, we deploy 8 computers installed 10 kinds of VoIP applications. We installed 6 computers with Windows operating system, the others 2 computers installed with Linux operating system, because there are only 4 applications can be installed on Linux platform. We can establishes ordinary VoIP calls among them, and all of them can dial the phone number directly. There are 4 phones ready to be called. We try our best to make calls from various places in the country to improve the credibility of our experiment.
-
-
-%Traffic collection is the beginning of all of the works. In order to get traffic of 10 VoIP applications mentioned above, we deploy 8 computers installed 10 kinds of VoIP applications. We installed 6 computers with Windows operating system, the others 2 computers installed with Linux operating system, because there are only 4 applications can be installed on Linux platform. We can establish ordinary VoIP calls among them, and they can dial the phone number directly. There are 4 cell phones ready to be called.
-
-For the purpose of labeling data easier, we use the process-based capture tool QPA under Windows operating system; We use tcpdump to capture traffic based on port, which can be known after process occupied. QPA provide GUI application under Windows OS, it is easy to use for capturing traffic for a single process. Under Linux platform, we need to analyze the ports VoIP
-application uses, then we use command like "tcpdump -i eth\_name trans\_protocol port port\_id" to capture traffic of specific ports. Because of process-based and port-based capture, it is easy to label raw traffic with their process name. Traffic from various video and game software will be labeled as non-VoIP traffic.
-
-We need to construct our training dataset with captured raw traffic. We process the raw traffic to $subflow^k$ dataset, we use sliding window to select $subflow^k$ into our dataset. The length of the window is k, and the next step is random. It ensures that our dataset isn't overly similar or vague. Figure~\ref{fig:dataset} shows how we select 4 $subflow^k$ for $k=10$. In this paper, a variety of CLNN models are trained according to different k, including 2, 4, 6, 8, 10, 20, 50 and 100. We have 4 steps to convert a $subflow^k$ to matrix. 1) Remove IP and UDP header; 2) Add 2 timestamps to each packet, one is the time difference from the first packet, the other one is the time difference from the previous packet; 3) Convert the $subflow^k$ to matrix on the basis of ASCII code; 4) Normalize the matrix. The length of VoIP packets is generally small around 50$\sim$210, so we set column of the matrix to 256. The row of the matrix is k, indicating a $subflow^k$ includes k packets.
-
-%Before training with deep learning model, we need to preprocess packets to $subflow^k$. In this paper, a variety of identification models are trained according to different k, including 2, 4, 6, 8, 10, 20, 50 and 100. To get different datasets for each k value, we set the size of sliding window equals k, and select random step length value from 1-k. Figure~\ref{fig:dataset} shows how we building dataset for $k=10$. There are 3 steps that we convert a $subflow^k$ to matrix. 1) Remove IP and UDP header; 2) Convert the $subflow^k$ to matrix on the basis of ASCII code; 3) Normalize the matrix. The length of VoIP packets is generally small around 50\~210, so we set column of the matrix to 256. The row of the matrix is k, indicating a $subflow^k$ includes k packets.
-\begin{figure}[htp]
-\begin{center}
-\includegraphics[width=0.45\textwidth]{dataset.eps}
-\caption{How to process raw traffic to build $subflow^k$ dataset(k=10).}\label{fig:dataset}
-\end{center}
-\end{figure}
-
-\section{Learning with CLNN model}
-\label{sec:learningusingdeeplearningmodel}
-\subsection{CLNN model}
-In 1990s, Y Lecun et al. adopted a back-propagation network in their handwritten digit recognition research~\cite{lecun1990handwritten}. And they designed a LeNet-5 model for handwritten digit recognition in~\cite{6}, which establish the structure of modern CNN network. With the rise of artificial intelligence technology, more and more excellent deep learning models appear. An incredible neural network called AlexNet was published in ~\cite{8}, this model got the best performance in the ImageNet competition held in 2012. After this, VGG, GoogleNet and ResNet were proposed for different recognition task~\cite{9,10,11}. CNN is good at digit recognition, by contrast, LSTM is commonly used for speech recognition. LSTM is proposed for solving the gradient problem in RNN networks~\cite{lstm}.
-
-%We compare CNN, AlexNet and GoogleNet with k set to 20 using a small part of dataset. The accuracy of CNN is above 94\%, the accuracies of AlexNet and GoogleNet are close to 1. GoogleNet costs more time and space than the other 2 models. We did comprehensive consideration about accuracy, efficiency, hardware requirements, data set size and other conditions, we decide to use AlexNet in the next further training. With the increase of dataset, we can use the models with a deeper network structure such as GoogleNet and ResNet.
-
-We studied the above CNN models and were inspired by~\cite{clnn},
-%we did comprehensive consideration about accuracy, efficiency, hardware requirements, data set size and other conditions,
-we design a CLNN model based on CNN and LSTM. Like many existing deep learning models, most of the CNN ideas come from AlexNet. The difference is we employ LSTM for improving temporal features. CNN and LSTM layers extract the features of frequency and time domain respectively before they are input into fully connected layers. Figure~\ref{fig:cnnlstm} shows how CLNN model works.
-
-\begin{figure}[htp]
-\begin{center}
-\includegraphics[width=0.45\textwidth]{cnnlstm.eps}
-\caption{Basic principles for extracting representations with CLNN model.}\label{fig:cnnlstm}
-\end{center}
-\end{figure}
-
-%We adopt ReLU (Rectified Linear Units) function as its activation function, and applies dropout in learning phase.
-
-In this paper, the inputs are matrices with size of k$\times$l, where k is the number of packets used for $subflow^k$, l is the column of matrix, we use 256. We empoly 2 LSTM layers, where each layer has 2048 cells. And we employ 5 CNN layers in parallel, the parameters of each CNN layer is similar with AlexNet. We adjust the filter kernel to 5$\times$5 in the first layer, and we change the padding type to same in each layer. We only use 1 max pooling after the first layer. The features extracted by LSTM and CNN layers will be concatenated and input into fully connection layers. We have 3 fully connection layers, and each of the first 2 fully connection layers has 2048 hidden units. The third layer is activated using Softmax function, the sample will be classified into 11 classes.
-%We adjust the filter kernel to 5$\times$5, and we change the padding type to same in each layer. The first 7 layers in the structure dropout the neural according to a probability of 0.5, the first 2 fully connected layers are activated using the ReLU activation function, and the last fully connected layer is activated using Softmax function. All LSTM layers use Tanh as their activation function when convolution layers use ReLU. We only keep max-pooling operation at 2\textsuperscript{nd} and 5\textsuperscript{th} layers, the pooling window set to 2$\times$2.
-
-%The inputs are matrices with size of k$\times$l, where k is number of packets used for $subflow^k$, l is the column of matrix, we use 256. In our experiment, several k values we select are not fit into AlexNet. So we do some adjustment on original AlexNet, we adjust the filter kernel to 5$\times$5, and we change the padding type to same in each layer. The first 7 layers in the structure dropout the neural according to a probability of 0.5, the first 2 fully connected layers are activated using the ReLU activation function, and the last fully connected layer is activated using Softmax function. We only keep a max-pooling operation in the last convolution layer, the pooling window set to 2$\times$2.
-
-%\subsection{AlexNet}
-%AlexNet includes 8 layers, consists of 5 convolution layers and 3 fully connected layers. AlexNet adopts ReLU (Rectified Linear Units) function as its activation function, and it applies dropout in learning phase. These 2 ideas shortens the training cycle so that it increases efficiency.
-
-%The inputs of AlexNet are matrices with size of k$\times$l, where k is number of packets used for $subflow^k$, l is the column of matrix, we use 256. In our experiment, several k values we select are not fit into AlexNet. So we do some adjustment on original AlexNet, we adjust the filter kernel to 5$\times$5, and we change the padding type to same in each layer. The first 7 layers in the structure dropout the neural according to a probability of 0.5, the first 2 fully connected layers are activated using the ReLU activation function, and the last fully connected layer is activated using Softmax function. We only keep a max-pooling operation in the last convolution layer, the pooling window set to 2$\times$2.
-\subsection{Learning}
-We use Softmax function as the activation function of the last layer. There are 11 types of traffic in our experiment, we calculate the posterior probability for unknown flow to identify its application type. Softmax function shows as
-\begin{equation}
-\hat P({V_i}) = softmax({V_i}) = \frac{{{e^{{V_i}}}}}{{\sum\limits_{j = 1}^n {{e^{{V_j}}}} }}
-\end{equation}
-where $({V_1},{V_2},{\rm{\cdot\cdot\cdot,}}{V_i},{\rm{\cdot\cdot\cdot}},{V_n})$ denotes the matrix to be inputted into Softmax in the 8th layer; $(\hat P({V_1}),\hat P({V_2}),{\rm{\cdot\cdot\cdot}},\hat P({V_i}),{\rm{\cdot\cdot\cdot}},\hat P({V_n}))$ is the output of the 8th layer, it is posterior probability distribution of $subflow^k$, it is a vector with size of $1 \times n$; n is 11 in our experiment, it denotes the number of training traffic types.
-
-During the training, we train data to find the most optimal weights to maximize the likelihood estimate of $subflow^k$. To minimize the CCE (categorical cross-entropy), we have the formula as follow,
-\begin{equation}
-CCE({V_i}) =  - \sum\limits_{i = 1}^n {P({V_i}) \times \log (\hat P({V_i}))}
-\end{equation}
-where $P({V_i})$ denotes the real probability ${V_i}$, it is the target matrix generated according to the labels corresponding to the training data. $P({V_j})=1$, where j is the label corresponding to VoIP application that this $subflow^k$ belongs.$P({V_i})=0$,where $i \ne j$.
-
-We use SGD (Stochastic Gradient Descent) optimizer to minimize the loss function in this paper, and apply nesterov momentum to update gradient after every iteration. The formula of gradient increment shown as follow,
-\begin{equation}
-\Delta {X_t} = \tau {M_{t - 1}} - \eta \nabla f({X_{t - 1}} + \tau {M_{t - 1}})
-\end{equation}
-where ${\tau}$ denotes the factor of momentum, ${\eta}$ denotes learning rate. ${g_t} = \nabla f({X_{t - 1}} + \tau {M_{t - 1}})$ is the gradient of transition point, where $\Delta {X_t}$ denotes the real decreasing displacement, ${X_t}$ denotes the position at time t, ${M_t}$ denotes the momentum at time t.
-
-In our experiment, learning rate will decay after each epoch, decay rule shown as:
-\begin{equation}
-{\eta _i} = {\eta _{i - 1}} \times \frac{1}{{1 + \rho  \times i}}
-\end{equation}
-where ${\rho }$ denotes the decay factor, i denotes the number of epoch.
-
-\subsection{Feature Set}
-Our method is to get a more precise feature set for identifying VoIP traffic. The feature set extracted by deep learning is unreadable. The feature set is used to train classifiers with SVM, random forest, decision tree and naive bayes in our work, these classifiers are more real-time than the CLNN model. All of the classifiers trained with 4 machine learning methods achieved good accuracy. These classifiers will be used in real-time identification.
-
-\section{Real-time identification}
-\label{sec:realtimeidentification}
-
-In this section, we introduce how to real-time identify VoIP traffic with our identification system. There are 3 main components in real-time identification module. Capturer capture UDP packets and separate them into corresponding flows by IP address and UDP port. Filter follows several rules to filter out obvious non-VoIP flows. Classifier classifies flows into corresponding application type with extracted features. The basic architecture is shown in Figure~\ref{fig:online_architecture_new}.
+We design an online identification system for large-scale networks, there are 3 main components in this system. The basic architecture is shown in Figure~\ref{fig:online_architecture_new}. Capturer capture UDP packets and separate them into corresponding flows by IP address and UDP port. Filter follows several rules to filter out obvious non-VoIP flows. Classifier classifies flows into corresponding application type with extracted features. 
 \begin{figure}[htp]
 \begin{center}
 \includegraphics[width=0.45\textwidth]{online_architecture_new.eps}
@@ -331,11 +191,64 @@ In this section, we introduce how to real-time identify VoIP traffic with our id
 \end{center}
 \end{figure}
 
-%In order to capture the VoIP traffic in real time, we design a real-time traffic capturer. This capturer can capture UDP traffic and separate flows by IP address and UDP port. There is a rule-based filter to filter out non-VoIP flows preliminarily, the remaining flows will be sent to the classifier. The classifier will accurately classify flows according to application type.
+We adopt Apache Storm as our stream processing computation engine, and Apache Kafka as backup and load balance system to interact with networks. Figure~\ref{fig:storm} shows the Storm topology of our system. There is a Kafka Spout as the Kafka consumer client to consume the traffic from the network. A Bolt as capturer, a Bolt to distribute pending flows to next Bolt, the subsequent Bolt may be a filter or a classifier, which is determined by our settings based on k. The last Bolt RedisWriter is in charge of writing the identification results to the Redis database, and in order to get more accurate identification result, the result in database will be replaced by the classifier that gets higher probability.
 
-%In most of VoIP applications, H.323 and SIP protocol are used for establishing and ending VoIP call. They both support call hold, call transfer, call forwarding, call waiting and some other supplementary services. So there are some researchers devote to monitor VoIP traffic based on call control signaling. It is no longer feasible to monitor VoIP traffic based on call control signaling. Here are several reasons: 1) SIP and H.323 protocols have their own development, and they support both UDP and TCP now. 2) The usage of ports is more and more irregular, it makes many identification methods useless. 3) More and more VoIP applications are encrypted to the traffic of call control. 4) For some VoIP applications, the server used for communication and that used for transmitting call control signaling are different. Due to these above reasons, it is hard to monitor VoIP call control signaling. These reasons also are our starting point to identify VoIP traffic with RTP/RTCP packets, all applications use RTP/RTCP protocol to transfer voice data.
+\begin{figure}[htp]
+\begin{center}
+\includegraphics[width=0.48\textwidth]{storm.eps}
+\caption{Storm topology of online identification system.}\label{fig:storm}
+\end{center}
+\end{figure}
 
-The capturer maintain a pending flows queue and map packet into its matching pending flow using its IP address and UDP port. Figure~\ref{fig:flow} shows the details to separate flows by IP address and UDP port. If a packet cannot find the corresponding pending flow, it creates a new pending flow and adopt IP address and UDP port as its key. If a packet is appended into pending flow, and the number of packet reaches k, this $subflow^k$ will be sent to next component filter. The capturer guarantees that all captured packets are UDP packets, and the capturer can remove dead flows from pending flows queue. Flows whose number of packets doesn't reach k within limited time will be considered as dead flows.
+%In this paper, we extract features for subflows (we use $subflow^k$ to denote one in the following) which consist of several continuous VoIP packets from a VoIP flow. In real-time identification phase, we build a $subflow^k$ after a connection established and apply the features to identify the $subflow^k$.
+
+\section{Algorithms}
+\label{sec:algorithms}
+
+\subsection{Data Preprocessing}
+\label{sec:datapreprocessing}
+We collect raw VoIP traffic and contruct $subflow^k$ dataset with our sampling method. We adopt different $k$ as the size of sliding window to select $subflow^k$ into our dataset. When the window size is $k$, the next step is randomized in [1, k]. It ensures that our dataset isn't overly similar or vague. Figure~\ref{fig:dataset} shows how we select 4 $subflow^k$ for $k=10$.
+\begin{figure}[htp]
+\begin{center}
+\includegraphics[width=0.45\textwidth]{dataset.eps}
+\caption{How to process raw traffic to build $subflow^k$ dataset(k=10).}\label{fig:dataset}
+\end{center}
+\end{figure}
+
+
+The $subflow^k$ we select are processed to matrices, these matrices as training data are input into CLNN model. We have 5 steps to convert a $subflow^k$ to matrix. 1) Remove IP and UDP header; 2) Add 2 timestamps to each packet, one is the time difference from the first packet, the other one is the time difference from the previous packet; 3) Add 0 to denote forward direction of the traffic transmission, 255 to denote the backward direction; 4) Convert the $subflow^k$ to matrix on the basis of ASCII code; 4) Normalize the matrix, the timestamps and direction types what we add are normalized too. The length of VoIP packets is generally small around 50$\sim$210, so we set column of the matrix to 256. The row of the matrix is $k$, indicating a $subflow^k$ includes k packets.
+
+\subsection{CLNN model}
+Based on section~\ref{sec:datapreprocessing}, the input of CLNN model is matrices with size of $k \times l$, where $k$ is number of packets used for $subflow^k$, $l$ is the column of matrix, we use 256. We empoly 2 LSTM layers, where each layer has 512 hidden cells. And we employ 5 CNN layers in parallel, the parameters of each CNN layer is similar with AlexNet. We adjust the filter kernel to $5 \times 5$ in the first layer, and we change the padding type to same in each layer. We only use 1 max pooling after the first layer. After the 5\textsuperscript{th} CNN layer, there are 1 flatten layer to reshape features into one-dimension and 1 fully connection layer to extract features preliminary. The features extracted by LSTM and CNN parts are concatenated and input into fully connection layers, the fully connection layer has 2048 hidden units. The concatenated features are input into fully connection layer with 2048 hidden units. The last layer as the output layer is activated using Softmax function, the sample will be classified into 11 classes.
+
+\subsection{Learning}
+We use SGD (Stochastic Gradient Descent) optimizer to minimize the loss function in this paper, and apply nesterov momentum to update gradient after every iteration. The formula of gradient increment shown as follow,
+\begin{equation}
+\Delta {X_t} = \tau {M_{t - 1}} - \eta \nabla f({X_{t - 1}} + \tau {M_{t - 1}})
+\end{equation}
+where ${\tau}$ denotes the factor of momentum, ${\eta}$ denotes learning rate. ${g_t} = \nabla f({X_{t - 1}} + \tau {M_{t - 1}})$ is the gradient of transition point, where $\Delta {X_t}$ denotes the real decreasing displacement, ${X_t}$ denotes the position at time t, ${M_t}$ denotes the momentum at time t.
+
+In our work, learning rate decays after each epoch, decay rule is shown as:
+\begin{equation}
+{\eta _i} = {\eta _{i - 1}} \times \frac{1}{{1 + \rho  \times i}}
+\end{equation}
+where ${\rho }$ denotes the decay factor, i denotes the number of epoch.
+
+During the training, we train data to find the most optimal weights to maximize the likelihood estimate of $subflow^k$. To minimize the CCE (categorical cross-entropy), we have the formula as follow,
+\begin{equation}
+CCE({V_i}) =  - \sum\limits_{i = 1}^n {P({V_i}) \times \log (\hat P({V_i}))}
+\end{equation}
+where $P({V_i})$ denotes the real probability ${V_i}$, it is the target matrix generated according to the labels corresponding to the training data. $P({V_j})=1$, where j is the label corresponding to VoIP application that this $subflow^k$ belongs.$P({V_i})=0$,where $i \ne j$.
+
+We use Softmax function as the activation function in the last layer. There are 11 types of traffic in our experiment, we calculate the posterior probability for unknown flow to identify its application type. Softmax function shows as
+\begin{equation}
+\hat P({V_i}) = softmax({V_i}) = \frac{{{e^{{V_i}}}}}{{\sum\limits_{j = 1}^n {{e^{{V_j}}}} }}
+\end{equation}
+where $({V_1},{V_2},{\rm{\cdot\cdot\cdot,}}{V_i},{\rm{\cdot\cdot\cdot}},{V_n})$ denotes the matrix to be inputted into Softmax in the 8th layer; $(\hat P({V_1}),\hat P({V_2}),{\rm{\cdot\cdot\cdot}},\hat P({V_i}),{\rm{\cdot\cdot\cdot}},\hat P({V_n}))$ is the output of the 8th layer, it is posterior probability distribution of $subflow^k$, it is a vector with size of $1 \times n$; n is 11 in our experiment, it denotes the number of training traffic types.
+
+\subsection{Components in Identification System}
+
+The first component capturer maintain a pending flows queue and map packet into its matching pending flow using its IP address and UDP port. Figure~\ref{fig:flow} shows the details to separate flows by IP address and UDP port. If a packet cannot find the corresponding pending flow, it creates a new pending flow and adopt IP address and UDP port as its key. If a packet is appended into pending flow, and the number of packet reaches k, this $subflow^k$ will be sent to next component filter. The capturer guarantees that all captured packets are UDP packets, and the capturer can remove dead flows from pending flows queue. Flows whose number of packets doesn't reach k within limited time will be considered as dead flows.
 
 \begin{figure}[htp]
 \begin{center}
@@ -403,37 +316,22 @@ The second component is a rule-based filter, it receives $subflow^k$ sent by cap
 
 The $subflow^k$ that pass through filter successfully will be input into the third component classifier, the features used by the classifier are extracted in offline training phase. 4 kinds of classifiers are trained by SVM, Random Forest, Naive Bayes and Decision Tree, we select SVM classifier which have the best performance into our real-time system. The classifier takes k-dimensional matrix as input and output a vector whose size is $1 \times n$,  n denotes the number of VoIP applications that our identification model can identify. The vector indicates a $subflow^k$'s likelihood estimation for every VoIP application. The index of the maximum value in the vector is the identification result. The classifier can set the identification result in database, subsequent packets will be identified by querying the database. In the process of identification, one flow will pass through multiple k-classifiers when it grows up to different k stages, these classifiers will give their own identification results and corresponding possibilities.
 
-We adopt Apache Storm as our stream processing computation engine, and Apache Kafka as backup and load balance system to interact with networks. Figure~\ref{fig:storm} shows the Storm topology of our system. There is a Kafka Spout as the Kafka consumer client to consume the traffic from the network. A Bolt as capturer, a Bolt to distribute pending flows to next Bolt, the subsequent Bolt may be a filter or a classifier, which is determined by our settings based on k. The last Bolt RedisWriter is in charge of writing the identification results to the Redis database, and in order to get more accurate identification result, the result in database will be replaced by the classifier that gets higher probability.
 
-\begin{figure}[htp]
-\begin{center}
-\includegraphics[width=0.48\textwidth]{storm.eps}
-\caption{Storm topology of online identification system.}\label{fig:storm}
-\end{center}
-\end{figure}
-
-
-%We input the matrix into identification model, it will output a vector whose size is $1 \times n$,  n denotes the number of VoIP applications that our identification model can identify. The vector indicates that this $subflow^k$'s likelihood estimation for every VoIP application. The index of the maximum value in the vector is the identification result. We will set the value in map database and remove this flow in pending flows. We do not have a way to identify unknown VoIP applications for now, but we want to improve our system. So we will research the packets whose maximum likelihood is less than 0.9.
-
-%In order to detect VoIP voice traffic in real time, we have some rules. We only monitor the packets whose transport layer's protocol is UDP, and their packet length is less than 256. We parse the UDP packet that meets our requirements by RTP or RTCP protocol. If the UDP packet can be parsed correctly, we will process this packet with 2 operations, append it into corresponding pending flow or search identification result in map database. If it cannot be parsed, we ignored it. Moreover, we ignore packet that is alone, it makes no sense to monitor it. It is easy but it works better than the way based on call control signaling.
-
-
-
-
-%In order to detect VoIP voice traffic in real time, we have some rules. We only monitor the packets whose transport layer's protocol is UDP, and their packet length is less than 256. We parse the UDP packet that meets our requirements by RTP or RTCP protocol. If the UDP packet can be parsed correctly, we will store its IP addresses and UDP ports, which used for the coming RTP/RTCP packets. If it cannot be parsed, we ignored it. Moreover, we ignore packet that is alone, it makes no sense to monitor it. It is easy but it works better than the way based on call control signaling. Figure~\ref{fig:flow} shows the details to separate flows by IP addresses and UDP ports.
-
-
-%After we capture enough k packets for identifying. The next step is to process $subflow^k$ to matrix. The rules are same as above. We skip it here. We input the matrix into identification model, it will output a vector whose size is $1 \times n$,  n denotes the number of VoIP applications that our identification model can identify. The vector indicates that this $subflow^k$'s likelihood estimation for every VoIP application. The index of the maximum value in the vector is the identification result. We do not have a way to identify unknown VoIP applications, but we want to improve our system. So we will research the packets whose maximum likelihood is less than 0.9.
 
 \section{Performance evaluation}
 \label{sec:performanceevaluation}
 In this section, we introduce the dataset used in our experiment firstly. Secondly, we give the specific parameters used in the CLNN model. Finally, we show the experimental results and give the evaluation of the system performance.
 \subsection{Dataset}
 \label{sec:dataset}
-We divide captured traffic into 2 dataset. We use dataset1 to train CLNN model, dataset2 is replayed by tcpreplay to examine real-time identification system. The details of dataset1 used for training shown in Table~\ref{tab:traffic}.
+Collecting VoIP traffic is the beginning of all of the works. In order to get raw traffic of 10 VoIP applications mentioned above, we deploy 8 computers installed 10 kinds of VoIP applications. We installed 6 computers with Windows operating system, the others 2 computers installed with Linux operating system, because there are only 4 applications can be installed on Linux platform. We can establish ordinary VoIP calls among them, and all of them can dial the phone number directly. There are 4 phones ready to be called. We try our best to make calls from various places in the country to improve the credibility of our experiment. Besides, we collect the traffic from various video and game software as non-VoIP traffic. We divide the captured traffic into two equal parts, the first part is preprocessing into subflow dataset when the second part is used for replaying by tcpreplay software to examine online identification system.
+
+Obtaining pure dataset and labeling dataset accurately are the basis of training good model. We adopt some traffic capture tools which are process-based. They can help us get pure raw traffic for each application, and we can label our dataset using the name of VoIP applications. We use the process-based capture tool QPA under Windows operating system; We use tcpdump to capture traffic based on port, which can be known after process occupied. QPA provide GUI application under Windows OS, it is easy to use for capturing traffic for a single process. Under Linux platform, we need to analyze the ports VoIP application uses, then we use command like ``tcpdump -i eth\_name trans\_protocol port port\_id" to capture traffic of specific ports. Because of process-based and port-based capture methods, it is easy to get pure raw traffic and label subflows with their corresponding process name.
+
+
+We construct $subflow^k$ dataset with 8 different k, including 2, 5, 10, 20, 30, 40, 50 and 100. It is used for training 8 CLNN models. The details of training dataset is shown in Table~\ref{tab:traffic}. The forth column shows the number of $subflow^k$ where k is 10, definitely, we also process the dataset according to k is 2, 5, 10, 20 and so on. It decides the first dimension of the matrix that will be input into CLNN model. 80\% of the $subflow^k$ are used for training when 20\% used for validating in training pahse.
 
 \begin{table}[htbp]
-  \caption{The details of dataset1.}
+  \caption{The details of $subflow^{10}$ dataset.}
   \label{tab:traffic}
   \centering
   \begin{tabular}{c l c c}
@@ -456,10 +354,9 @@ We divide captured traffic into 2 dataset. We use dataset1 to train CLNN model, 
   %\caption{The details of dataset1.}
 \end{table}
 
-The forth column shows the num. of $subflow^k$ where k is 10, definitely, we also process the dataset according to k is 2, 4, 6, 8 and so on. It decides the first dimension of the matrix that will be input into CLNN model. 80\% of the $subflow^k$ are used for training when 20\% used for validating in training pahse.
 
-\subsection{Parameter Setting}
-\label{sec:params}
+\subsection{Training Setting}
+\label{sec:trainingsetting}
 
 The optimization algorithm SGD used in training phase is a learning rate non-adaptive algorithm, the setting of learning rate has a direct impact on the experimental results. We learn from the general experience of deep learning, and we adjust it according to our experimental results. The initial learning rate is set to 0.01, it decays after 2 epochs following the rules mentioned in section 6.3. Nesterov updates based on the gradient, we set momentum factor to 0.9. We train the dataset 20 epochs with batch size 50, 100 and 200. Table~\ref{tab:params} shows the number and storage size of weights identification model.
 \begin{table}
@@ -471,11 +368,11 @@ The optimization algorithm SGD used in training phase is a learning rate non-ada
     \textbf{Model} & \textbf{Input\_Shape} & \textbf{Num. of Parm}&\textbf{Size(MB)}\\
     \hline
     k=2      & ${2 \times 256 \times 1}$  & 17,818,697  &87  \\
-    k=4      & ${4 \times 256 \times 1}$  & 17,820,823  &87  \\
-    k=6      & ${6 \times 256 \times 1}$  & 34,600,197  &154  \\
-    k=8      & ${8 \times 256 \times 1}$  & 34,602,387  &154 \\
-    k=10     & ${10 \times 256 \times 1}$  & 51,381,825  &221.6  \\
-    k=20     & ${20 \times 256 \times 1}$  & 84,947,847  &355.8 \\
+    k=5      & ${5 \times 256 \times 1}$  & 17,820,823  &87  \\
+    k=10      & ${10 \times 256 \times 1}$  & 34,600,197  &154  \\
+    k=20      & ${20 \times 256 \times 1}$  & 34,602,387  &154 \\
+    k=30     & ${30 \times 256 \times 1}$  & 51,381,825  &221.6  \\
+    k=40     & ${40 \times 256 \times 1}$  & 84,947,847  &355.8 \\
     k=50     & ${50 \times 256 \times 1}$  & 168,859,507  &691.3  \\
     k=100    & ${100 \times 256 \times 1}$  & 420,613,687  &1619.3  \\
     \hline
@@ -483,9 +380,12 @@ The optimization algorithm SGD used in training phase is a learning rate non-ada
   %\caption{The details of Alexnet parameters.}
 \end{table}
 
+The training is carried out on a machine with 24G RAM and a quad-core Intel processor of 3.6GHz. The machine is equipped with NVIDIA GeForce GTX 1070(8GB) to accelerate computing. CUDA Toolkit 8.0 is used in our experiment to support parallel computing.
+
+
 \subsection{Experiment Results}
 \label{sec:experimentresults}
-The dataset listed in Section~\ref{sec:dataset} is used to train. With the parameters setting in Section~\ref{sec:params}, we get 8 CLNN models for different k. The training and validating accuracies are shown in Table~\ref{tab:acc4models}. As the table shows, identification accuracy is correlated with batch size and packets number. Smaller batch size is able to get higher accuracy, but it will take more time in traing phase. Identifying subflows with more packets will get higher accuracy, but a higher k means also reduce the real-time performance of identification system. We need to balance the training time, real-time performance and identification accuracy in different scenarios.
+The dataset listed in Section~\ref{sec:dataset} is used to train, the numbers of subflows used to train are same for 8 different $k$. With the parameters setting in Section~\ref{sec:trainingsetting}, we get 8 CLNN models. The training and validating accuracies are shown in Table~\ref{tab:acc4models}. As the table shows, identification accuracy is correlated with batch size and packets number. Smaller batch size is able to get higher accuracy, but it takes more time in training phase. Identifying subflows with more packets will get higher accuracy, but a higher $k$ means also reduce the real-time performance of identification system. We need to balance the training time, real-time performance and identification accuracy in different scenarios. 
 
 
 \begin{table*}[htp]
@@ -500,15 +400,15 @@ The dataset listed in Section~\ref{sec:dataset} is used to train. With the param
     \hline
     k=2      & 0.522122  & 0.823860  &0.834630 & 0.795628  & 0.658820  &0.672410 & 0.901531  & 0.605440  &0.635330  \\
 
-    k=4      & 0.063926  & 0.989410  &0.997860& 0.320275  & 0.874420  &0.893790& 0.781780  & 0.627210  &0.647860 \\
+    k=5      & 0.063926  & 0.989410  &0.997860& 0.320275  & 0.874420  &0.893790& 0.781780  & 0.627210  &0.647860 \\
 
-    k=6      & 0.016822  & 0.996520  &0.999340& 0.091234  & 0.987550  &0.999340& 0.493562  & 0.924250  &0.939340 \\
+    k=10      & 0.016822  & 0.996520  &0.999340& 0.091234  & 0.987550  &0.999340& 0.493562  & 0.924250  &0.939340 \\
 
-    k=8      & 0.008969  & 0.998390  &0.999130& 0.034948  & 0.994830  &0.999130& 0.411541  & 0.949210  &0.949130 \\
+    k=20      & 0.008969  & 0.998390  &0.999130& 0.034948  & 0.994830  &0.999130& 0.411541  & 0.949210  &0.949130 \\
 
-    k=10     & 0.018781  & 0.998150  &0.999650& 0.018984  & 0.997710  &0.999650& 0.246316  & 0.983630  &0.999650  \\
+    k=30     & 0.018781  & 0.998150  &0.999650& 0.018984  & 0.997710  &0.999650& 0.246316  & 0.983630  &0.999650  \\
 
-    k=20     & 0.004145  & 0.998620  &0.999880& 0.007481  & 0.998520  &0.999880& 0.028801  & 0.997570  &0.999880 \\
+    k=40     & 0.004145  & 0.998620  &0.999880& 0.007481  & 0.998520  &0.999880& 0.028801  & 0.997570  &0.999880 \\
 
     k=50     & 0.001125  & 0.999730  &0.999460& 0.014981  & 0.996530  &0.999460& 0.144059  & 0.992870  &0.999460  \\
 
@@ -530,7 +430,7 @@ For the above 8 CLNN models, we use TPR (True Positive Rate) to evaluate them. T
 
 \begin{figure*}[htp]
 \begin{center}
-\includegraphics[width=1\textwidth]{clnn-batch.eps}
+\includegraphics[width=1\textwidth]{fprtpr.eps}
 \caption{The performance of the 8 CLNN models shown by TPR.}\label{fig:fprtpr}
 \end{center}
 \end{figure*}
@@ -552,7 +452,7 @@ The first chart in figure~\ref{fig:tf} shows the probability distribution of tru
 We use the feature set we extracted by CLNN model to train classifiers with 4 machine learning models, the accuracy of them are shown in Figure~\ref{fig:ml}. The previous research we mentioned in Section~\ref{sec:relatedwork}, they use machine learning methods and feature set extracted by human to identify VoIP traffic. With our feature set extracted by CLNN model, the accuracy is up to 98\% or even higher when k is higher than 10. 
 \begin{figure}
   \centering
-  \includegraphics[width=0.45\textwidth]{ml.eps}
+  \includegraphics[width=0.3\textwidth]{ml.eps}
   \caption{The accuracy of 4 machine learning methods using extracted feature set.}
   \label{fig:ml}
 \end{figure}
@@ -565,7 +465,7 @@ SVM has the best identification performance in these 4 machine learning methods.
   \centering
   \begin{tabular}{p{0.7cm}p{0.5cm}p{0.5cm}p{0.5cm}p{0.5cm}p{0.5cm}p{0.5cm}p{0.6cm}p{0.6cm}}
     \hline
-    \textbf{Model} & \textbf{k=2} &\textbf{k=4}&\textbf{k=6}&\textbf{k=8}&\textbf{k=10}&\textbf{k=20}&\textbf{k=50}&\textbf{k=100}\\
+    \textbf{Model} & \textbf{k=2} &\textbf{k=5}&\textbf{k=10}&\textbf{k=20}&\textbf{k=30}&\textbf{k=40}&\textbf{k=50}&\textbf{k=100}\\
     \hline
     Time(s)      & 27.55  & 20.12  &29.09&30.53&48.00&73.62&141.33&309.51  \\
     \hline

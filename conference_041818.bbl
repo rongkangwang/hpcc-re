@@ -109,12 +109,6 @@ T.~Qin, L.~Wang, Z.~Liu, and X.~Guan, ``Robust application identification
 \bibitem{1}
 Z.~Wang, ``The applications of deep learning on traffic identification,'' 2015.
 
-\bibitem{lecun1990handwritten}
-Y.~LeCun, B.~E. Boser, J.~S. Denker, D.~Henderson, R.~E. Howard, W.~E. Hubbard,
-  and L.~D. Jackel, ``Handwritten digit recognition with a back-propagation
-  network,'' in \emph{Advances in neural information processing systems}, 1990,
-  pp. 396--404.
-
 \bibitem{6}
 Y.~Lecun, L.~Bottou, Y.~Bengio, and P.~Haffner, ``Gradient-based learning
   applied to document recognition,'' \emph{Proceedings of the IEEE}, vol.~86,
@@ -143,12 +137,5 @@ K.~He, X.~Zhang, S.~Ren, and J.~Sun, ``Deep residual learning for image
 \bibitem{lstm}
 S.~Hochreiter and J.~Schmidhuber, ``Long short-term memory,'' \emph{Neural
   computation}, vol.~9, no.~8, pp. 1735--1780, 1997.
-
-\bibitem{clnn}
-T.~N. Sainath, O.~Vinyals, A.~Senior, and H.~Sak, ``Convolutional, long
-  short-term memory, fully connected deep neural networks,'' in
-  \emph{Acoustics, Speech and Signal Processing (ICASSP), 2015 IEEE
-  International Conference on}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE,
-  2015, pp. 4580--4584.
 
 \end{thebibliography}

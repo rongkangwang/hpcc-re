@@ -1,9 +1,8 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6670) (preloaded format=pdflatex 2018.4.24)  15 MAR 2019 18:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.3.22)  22 MAR 2019 15:13
 entering extended mode
 **./conference_041818.tex
 (conference_041818.tex
-LaTeX2e <2018-04-01> patch level 2
-Babel <3.18> and hyphenation patterns for 74 language(s) loaded.
+LaTeX2e <2018-12-01>
 (IEEEtran.cls
 Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 -- See the "IEEEtran_HOWTO" manual for usage information.
@@ -17,7 +16,7 @@ Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 \@IEEEtrantmptoksA=\toks14
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 503.
 
-(E:\CTeX\MiKTeX\tex\latex\psnfss\ot1ptm.fd
+(E:\CTeX\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 -- Using 8.5in x 11in (letter) paper.
@@ -106,53 +105,53 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 \@IEEEquantizeheightC=\dimen122
 \@IEEEquantizeprevdepth=\dimen123
 \@IEEEquantizemultiple=\count93
-\@IEEEquantizeboxA=\box26
+\@IEEEquantizeboxA=\box27
 \@IEEEtmpitemindent=\dimen124
 \IEEEPARstartletwidth=\dimen125
 \c@IEEEbiography=\count94
-\@IEEEtranrubishbin=\box27
+\@IEEEtranrubishbin=\box28
 )
 ** ATTENTION: Overriding command lockouts (line 2).
-(E:\CTeX\MiKTeX\tex\latex\cite\cite.sty
+(E:\CTeX\MiKTeX\tex/latex/cite\cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
 )
-(E:\CTeX\UserData\tex\latex\amsmath\amsmath.sty
-Package: amsmath 2017/09/02 v2.17a AMS math features
+(E:\CTeX\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2018/12/01 v2.17b AMS math features
 \@mathmargin=\skip44
 
 For additional information on amsmath, use the `?' option.
-(E:\CTeX\UserData\tex\latex\amsmath\amstext.sty
+(E:\CTeX\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(E:\CTeX\UserData\tex\latex\amsmath\amsgen.sty
+(E:\CTeX\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks15
 \ex@=\dimen126
 ))
-(E:\CTeX\UserData\tex\latex\amsmath\amsbsy.sty
+(E:\CTeX\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen127
 )
-(E:\CTeX\UserData\tex\latex\amsmath\amsopn.sty
+(E:\CTeX\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count95
-LaTeX Info: Redefining \frac on input line 213.
+LaTeX Info: Redefining \frac on input line 223.
 \uproot@=\count96
 \leftroot@=\count97
-LaTeX Info: Redefining \overline on input line 375.
+LaTeX Info: Redefining \overline on input line 385.
 \classnum@=\count98
 \DOTSCASE@=\count99
-LaTeX Info: Redefining \ldots on input line 472.
-LaTeX Info: Redefining \dots on input line 475.
-LaTeX Info: Redefining \cdots on input line 596.
-\Mathstrutbox@=\box28
-\strutbox@=\box29
+LaTeX Info: Redefining \ldots on input line 482.
+LaTeX Info: Redefining \dots on input line 485.
+LaTeX Info: Redefining \cdots on input line 606.
+\Mathstrutbox@=\box29
+\strutbox@=\box30
 \big@size=\dimen128
-LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
 \macc@depth=\count100
 \c@MaxMatrixCols=\count101
 \dotsspace@=\muskip10
@@ -173,41 +172,41 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \multlinegap=\skip45
 \multlinetaggap=\skip46
 \mathdisplay@stack=\toks19
-LaTeX Info: Redefining \[ on input line 2817.
-LaTeX Info: Redefining \] on input line 2818.
+LaTeX Info: Redefining \[ on input line 2844.
+LaTeX Info: Redefining \] on input line 2845.
 )
-(E:\CTeX\MiKTeX\tex\latex\amsfonts\amssymb.sty
+(E:\CTeX\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(E:\CTeX\MiKTeX\tex\latex\amsfonts\amsfonts.sty
+(E:\CTeX\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(E:\CTeX\MiKTeX\tex\latex\algorithms\algorithm.sty
+(E:\CTeX\MiKTeX\tex/latex/algorithms\algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
 
-(E:\CTeX\MiKTeX\tex\latex\float\float.sty
+(E:\CTeX\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count107
 \float@exts=\toks20
-\float@box=\box30
+\float@box=\box31
 \@float@everytoks=\toks21
-\@floatcapt=\box31
+\@floatcapt=\box32
 )
-(E:\CTeX\MiKTeX\tex\latex\base\ifthen.sty
+(E:\CTeX\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \@float@every@algorithm=\toks22
 \c@algorithm=\count108
 )
-(E:\CTeX\MiKTeX\tex\latex\algorithms\algorithmic.sty
+(E:\CTeX\MiKTeX\tex/latex/algorithms\algorithmic.sty
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 
-(E:\CTeX\MiKTeX\tex\latex\graphics\keyval.sty
+(E:\CTeX\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks23
 )
@@ -218,28 +217,28 @@ Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \ALC@tlm=\skip47
 \algorithmicindent=\skip48
 )
-(E:\CTeX\MiKTeX\tex\latex\graphics\graphicx.sty
+(E:\CTeX\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-(E:\CTeX\MiKTeX\tex\latex\graphics\graphics.sty
+(E:\CTeX\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-(E:\CTeX\MiKTeX\tex\latex\graphics\trig.sty
+(E:\CTeX\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(E:\CTeX\UserData\tex\latex\graphics-cfg\graphics.cfg
+(E:\CTeX\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
-(E:\CTeX\UserData\tex\latex\graphics-def\pdftex.def
+(E:\CTeX\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen135
 \Gin@req@width=\dimen136
 )
-(E:\CTeX\MiKTeX\tex\latex\base\textcomp.sty
-Package: textcomp 2017/04/05 v2.0i Standard LaTeX package
+(E:\CTeX\MiKTeX\tex/latex/base\textcomp.sty
+Package: textcomp 2018/08/11 v2.0j Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
 (textcomp)               4 = 5 + \texteuro
@@ -253,13 +252,13 @@ Package textcomp Info: Sub-encoding information:
 (textcomp)             See the documentation for details.
 Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
 
-(E:\CTeX\MiKTeX\tex\latex\base\ts1enc.def
+(E:\CTeX\MiKTeX\tex/latex/base\ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
 
-(E:\CTeX\MiKTeX\tex\latex\base\ts1enc.dfu
-File: ts1enc.dfu 2018/04/05 v1.2c UTF-8 support for inputenc
+(E:\CTeX\MiKTeX\tex/latex/base\ts1enc.dfu
+File: ts1enc.dfu 2018/10/05 v1.2f UTF-8 support for inputenc
    defining Unicode char U+00A2 (decimal 162)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00A4 (decimal 164)
@@ -395,10 +394,10 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )
-(E:\CTeX\MiKTeX\tex\latex\xcolor\xcolor.sty
+(E:\CTeX\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-(E:\CTeX\UserData\tex\latex\graphics-cfg\color.cfg
+(E:\CTeX\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -412,8 +411,8 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-(E:\CTeX\MiKTeX\tex\latex\multirow\multirow.sty
-Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
+(E:\CTeX\MiKTeX\tex/latex/multirow\multirow.sty
+Package: multirow 2019/01/01 v2.4 Span multiple rows of a table
 \multirow@colwidth=\skip49
 \multirow@cntb=\count113
 \multirow@dima=\skip50
@@ -436,17 +435,17 @@ LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 14.
 
-(E:\CTeX\MiKTeX\tex\latex\base\ts1cmr.fd
+(E:\CTeX\MiKTeX\tex/latex/base\ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 14.
 
 -- Lines per column: 56 (exact).
-(E:\CTeX\MiKTeX\tex\context\base\supp-pdf.mkii
+(E:\CTeX\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count114
 \scratchdimen=\dimen138
-\scratchbox=\box32
+\scratchbox=\box33
 \nofMPsegments=\count115
 \nofMParguments=\count116
 \everyMPshowfont=\toks24
@@ -455,45 +454,40 @@ LaTeX Font Info:    ... okay on input line 14.
 \MPnumerator=\count118
 \makeMPintoPDFobject=\count119
 \everyMPtoPDFconversion=\toks25
-) (E:\CTeX\MiKTeX\tex\latex\oberdiek\epstopdf-base.sty
+) (E:\CTeX\MiKTeX\tex/latex/oberdiek\epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-(E:\CTeX\MiKTeX\tex\generic\oberdiek\infwarerr.sty
+(E:\CTeX\MiKTeX\tex/generic/oberdiek\infwarerr.sty
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-(E:\CTeX\MiKTeX\tex\latex\oberdiek\grfext.sty
+(E:\CTeX\MiKTeX\tex/latex/oberdiek\grfext.sty
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 
-(E:\CTeX\MiKTeX\tex\generic\oberdiek\kvdefinekeys.sty
+(E:\CTeX\MiKTeX\tex/generic/oberdiek\kvdefinekeys.sty
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 
-(E:\CTeX\MiKTeX\tex\generic\oberdiek\ltxcmds.sty
+(E:\CTeX\MiKTeX\tex/generic/oberdiek\ltxcmds.sty
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )))
-(E:\CTeX\MiKTeX\tex\latex\oberdiek\kvoptions.sty
+(E:\CTeX\MiKTeX\tex/latex/oberdiek\kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-(E:\CTeX\MiKTeX\tex\generic\oberdiek\kvsetkeys.sty
+(E:\CTeX\MiKTeX\tex/generic/oberdiek\kvsetkeys.sty
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
-(E:\CTeX\MiKTeX\tex\generic\oberdiek\etexcmds.sty
+(E:\CTeX\MiKTeX\tex/generic/oberdiek\etexcmds.sty
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 
-(E:\CTeX\MiKTeX\tex\generic\oberdiek\ifluatex.sty
+(E:\CTeX\MiKTeX\tex/generic/oberdiek\ifluatex.sty
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
-)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
-(E:\CTeX\MiKTeX\tex\generic\oberdiek\pdftexcmds.sty
-Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO
+))))
+(E:\CTeX\MiKTeX\tex/generic/oberdiek\pdftexcmds.sty
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(E:\CTeX\MiKTeX\tex\generic\oberdiek\ifpdf.sty
-Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+(E:\CTeX\MiKTeX\tex/generic/oberdiek\ifpdf.sty
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -506,257 +500,272 @@ Package grfext Info: Graphics extension search list:
 (grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
-) [1{E:/CTeX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}
+) [1{C:/Users/KANG/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 151.
+LaTeX Font Info:    Try loading font information for U+msa on input line 152.
 
-(E:\CTeX\MiKTeX\tex\latex\amsfonts\umsa.fd
+(E:\CTeX\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 151.
+LaTeX Font Info:    Try loading font information for U+msb on input line 152.
 
-(E:\CTeX\MiKTeX\tex\latex\amsfonts\umsb.fd
+(E:\CTeX\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [2]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 185.
-
-
-(E:\CTeX\MiKTeX\tex\latex\psnfss\omsptm.fd
-File: omsptm.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 185.
-Package epstopdf Info: Source file: <dataset.eps>
-(epstopdf)                    date: 2018-05-06 21:35:30
-(epstopdf)                    size: 77559 bytes
-(epstopdf)             Output file: <dataset-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-12-21 18:51:08
-(epstopdf)                    size: 14078 bytes
-(epstopdf)             Command: <epstopdf --outfile=dataset-eps-converted-to.pd
-f dataset.eps>
-(epstopdf)             \includegraphics on input line 241.
-Package epstopdf Info: Output file is already uptodate.
-<dataset-eps-converted-to.pdf, id=14, 626.34pt x 236.885pt>
-File: dataset-eps-converted-to.pdf Graphic file (type pdf)
-<use dataset-eps-converted-to.pdf>
-Package pdftex.def Info: dataset-eps-converted-to.pdf  used on input line 241.
-(pdftex.def)             Requested size: 232.19843pt x 87.81956pt.
- [3 <./dataset-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <cnnlstm.eps>
-(epstopdf)                    date: 2019-02-27 14:42:15
+(epstopdf)                    date: 2019-03-22 10:11:00
 (epstopdf)                    size: 84923 bytes
 (epstopdf)             Output file: <cnnlstm-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-02-27 14:42:15
+(epstopdf)                    date: 2019-03-22 10:11:00
 (epstopdf)                    size: 16725 bytes
 (epstopdf)             Command: <epstopdf --outfile=cnnlstm-eps-converted-to.pd
 f cnnlstm.eps>
-(epstopdf)             \includegraphics on input line 259.
+(epstopdf)             \includegraphics on input line 173.
 Package epstopdf Info: Output file is already uptodate.
-<cnnlstm-eps-converted-to.pdf, id=40, 469.755pt x 221.82875pt>
+<cnnlstm-eps-converted-to.pdf, id=12, 469.755pt x 221.82875pt>
 File: cnnlstm-eps-converted-to.pdf Graphic file (type pdf)
 <use cnnlstm-eps-converted-to.pdf>
-Package pdftex.def Info: cnnlstm-eps-converted-to.pdf  used on input line 259.
+Package pdftex.def Info: cnnlstm-eps-converted-to.pdf  used on input line 173.
 (pdftex.def)             Requested size: 232.19843pt x 109.64816pt.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 184.
 
-Underfull \hbox (badness 10000) in paragraph at lines 279--281
+
+(E:\CTeX\MiKTeX\tex/latex/psnfss\omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 184.
+Package epstopdf Info: Source file: <online_architecture_new.eps>
+(epstopdf)                    date: 2019-03-22 10:11:00
+(epstopdf)                    size: 240290 bytes
+(epstopdf)             Output file: <online_architecture_new-eps-converted-to.p
+df>
+(epstopdf)                    date: 2019-03-22 10:11:00
+(epstopdf)                    size: 62688 bytes
+(epstopdf)             Command: <epstopdf --outfile=online_architecture_new-eps
+-converted-to.pdf online_architecture_new.eps>
+(epstopdf)             \includegraphics on input line 189.
+Package epstopdf Info: Output file is already uptodate.
+<online_architecture_new-eps-converted-to.pdf, id=13, 767.86874pt x 436.63126pt
+>
+File: online_architecture_new-eps-converted-to.pdf Graphic file (type pdf)
+<use online_architecture_new-eps-converted-to.pdf>
+Package pdftex.def Info: online_architecture_new-eps-converted-to.pdf  used on 
+input line 189.
+(pdftex.def)             Requested size: 232.19843pt x 132.02972pt.
+Package epstopdf Info: Source file: <storm.eps>
+(epstopdf)                    date: 2019-03-22 10:11:00
+(epstopdf)                    size: 1323206 bytes
+(epstopdf)             Output file: <storm-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-03-22 10:11:00
+(epstopdf)                    size: 106507 bytes
+(epstopdf)             Command: <epstopdf --outfile=storm-eps-converted-to.pdf 
+storm.eps>
+(epstopdf)             \includegraphics on input line 198.
+Package epstopdf Info: Output file is already uptodate.
+<storm-eps-converted-to.pdf, id=14, 1029.8475pt x 346.29375pt>
+File: storm-eps-converted-to.pdf Graphic file (type pdf)
+<use storm-eps-converted-to.pdf>
+Package pdftex.def Info: storm-eps-converted-to.pdf  used on input line 198.
+(pdftex.def)             Requested size: 247.6778pt x 83.28128pt.
+Package epstopdf Info: Source file: <dataset.eps>
+(epstopdf)                    date: 2019-03-22 10:11:00
+(epstopdf)                    size: 77559 bytes
+(epstopdf)             Output file: <dataset-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-03-22 10:11:00
+(epstopdf)                    size: 14078 bytes
+(epstopdf)             Command: <epstopdf --outfile=dataset-eps-converted-to.pd
+f dataset.eps>
+(epstopdf)             \includegraphics on input line 213.
+Package epstopdf Info: Output file is already uptodate.
+<dataset-eps-converted-to.pdf, id=15, 626.34pt x 236.885pt>
+File: dataset-eps-converted-to.pdf Graphic file (type pdf)
+<use dataset-eps-converted-to.pdf>
+Package pdftex.def Info: dataset-eps-converted-to.pdf  used on input line 213.
+(pdftex.def)             Requested size: 232.19843pt x 87.81956pt.
+ [3 <./cnnlstm-eps-converted-to.pdf> <./online_architecture_new-eps-converted-t
+o.pdf> <./storm-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 246--248
 \OT1/ptm/m/n/10 where $\OT1/cmr/m/n/10 ([]\OML/cmm/m/it/10 ; []; [][]; []; []\O
 T1/cmr/m/n/10 )$ \OT1/ptm/m/n/10 de-notes the ma-trix
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 279--281
+Underfull \hbox (badness 10000) in paragraph at lines 246--248
 \OT1/ptm/m/n/10 to be in-putted into Soft-max in the 8th layer;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 279--281
+Underfull \hbox (badness 10000) in paragraph at lines 246--248
 \OT1/cmr/m/n/10 ([]([])\OML/cmm/m/it/10 ; []\OT1/cmr/m/n/10 ([])\OML/cmm/m/it/1
 0 ; []; []\OT1/cmr/m/n/10 ([])\OML/cmm/m/it/10 ; []; []\OT1/cmr/m/n/10 ([]))$ \
 OT1/ptm/m/n/10 is the out-put of
  []
 
 
-Underfull \hbox (badness 1721) in paragraph at lines 279--281
+Underfull \hbox (badness 1721) in paragraph at lines 246--248
 \OT1/ptm/m/n/10 the 8th layer, it is pos-te-rior prob-a-bil-ity dis-tri-bu-tion
  of
  []
 
-Package epstopdf Info: Source file: <online_architecture_new.eps>
-(epstopdf)                    date: 2019-03-13 15:27:06
-(epstopdf)                    size: 240290 bytes
-(epstopdf)             Output file: <online_architecture_new-eps-converted-to.p
-df>
-(epstopdf)                    date: 2019-03-13 15:27:06
-(epstopdf)                    size: 62688 bytes
-(epstopdf)             Command: <epstopdf --outfile=online_architecture_new-eps
--converted-to.pdf online_architecture_new.eps>
-(epstopdf)             \includegraphics on input line 309.
-Package epstopdf Info: Output file is already uptodate.
-<online_architecture_new-eps-converted-to.pdf, id=41, 767.86874pt x 436.63126pt
->
-File: online_architecture_new-eps-converted-to.pdf Graphic file (type pdf)
-<use online_architecture_new-eps-converted-to.pdf>
-Package pdftex.def Info: online_architecture_new-eps-converted-to.pdf  used on 
-input line 309.
-(pdftex.def)             Requested size: 232.19843pt x 132.02972pt.
 Package epstopdf Info: Source file: <flow.eps>
-(epstopdf)                    date: 2018-05-06 22:05:18
+(epstopdf)                    date: 2019-03-22 10:11:00
 (epstopdf)                    size: 86963 bytes
 (epstopdf)             Output file: <flow-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-12-21 18:51:12
+(epstopdf)                    date: 2019-03-22 10:11:00
 (epstopdf)                    size: 16890 bytes
 (epstopdf)             Command: <epstopdf --outfile=flow-eps-converted-to.pdf f
 low.eps>
-(epstopdf)             \includegraphics on input line 322.
+(epstopdf)             \includegraphics on input line 255.
 Package epstopdf Info: Output file is already uptodate.
-<flow-eps-converted-to.pdf, id=42, 701.62125pt x 137.51375pt>
+<flow-eps-converted-to.pdf, id=90, 701.62125pt x 137.51375pt>
 File: flow-eps-converted-to.pdf Graphic file (type pdf)
 <use flow-eps-converted-to.pdf>
-Package pdftex.def Info: flow-eps-converted-to.pdf  used on input line 322.
+Package pdftex.def Info: flow-eps-converted-to.pdf  used on input line 255.
 (pdftex.def)             Requested size: 232.19843pt x 45.50977pt.
-[4 <./cnnlstm-eps-converted-to.pdf>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-Package epstopdf Info: Source file: <storm.eps>
-(epstopdf)                    date: 2019-02-18 09:53:10
-(epstopdf)                    size: 1323206 bytes
-(epstopdf)             Output file: <storm-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-02-18 09:53:10
-(epstopdf)                    size: 106507 bytes
-(epstopdf)             Command: <epstopdf --outfile=storm-eps-converted-to.pdf 
-storm.eps>
-(epstopdf)             \includegraphics on input line 390.
-Package epstopdf Info: Output file is already uptodate.
-<storm-eps-converted-to.pdf, id=68, 1029.8475pt x 346.29375pt>
-File: storm-eps-converted-to.pdf Graphic file (type pdf)
-<use storm-eps-converted-to.pdf>
-Package pdftex.def Info: storm-eps-converted-to.pdf  used on input line 390.
-(pdftex.def)             Requested size: 247.6778pt x 83.28128pt.
-[5 <./online_architecture_new-eps-converted-to.pdf> <./flow-eps-converted-to.pd
-f> <./storm-eps-converted-to.pdf>]
-Overfull \hbox (2.33344pt too wide) in paragraph at lines 475--499
+[4 <./dataset-eps-converted-to.pdf> <./flow-eps-converted-to.pdf>] [5]
+Overfull \hbox (2.33344pt too wide) in paragraph at lines 395--419
  [][] 
  []
 
-Package epstopdf Info: Source file: <clnn-batch.eps>
-(epstopdf)                    date: 2019-03-15 15:27:51
-(epstopdf)                    size: 5255195 bytes
-(epstopdf)             Output file: <clnn-batch-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-03-15 15:28:15
-(epstopdf)                    size: 1479076 bytes
-(epstopdf)             Command: <epstopdf --outfile=clnn-batch-eps-converted-to
-.pdf clnn-batch.eps>
-(epstopdf)             \includegraphics on input line 513.
+Package epstopdf Info: Source file: <fprtpr.eps>
+(epstopdf)                    date: 2019-03-22 14:52:34
+(epstopdf)                    size: 5304830 bytes
+(epstopdf)             Output file: <fprtpr-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-03-22 15:03:08
+(epstopdf)                    size: 1021640 bytes
+(epstopdf)             Command: <epstopdf --outfile=fprtpr-eps-converted-to.pdf
+ fprtpr.eps>
+(epstopdf)             \includegraphics on input line 433.
 Package epstopdf Info: Output file is already uptodate.
-<clnn-batch-eps-converted-to.pdf, id=141, 825.0825pt x 577.15625pt>
-File: clnn-batch-eps-converted-to.pdf Graphic file (type pdf)
-<use clnn-batch-eps-converted-to.pdf>
-Package pdftex.def Info: clnn-batch-eps-converted-to.pdf  used on input line 51
-3.
+
+
+pdfTeX warning: pdflatex.exe (file ./fprtpr-eps-converted-to.pdf): PDF inclusio
+n: found PDF version <1.7>, but at most version <1.5> allowed
+<fprtpr-eps-converted-to.pdf, id=141, 825.0825pt x 577.15625pt>
+File: fprtpr-eps-converted-to.pdf Graphic file (type pdf)
+<use fprtpr-eps-converted-to.pdf>
+Package pdftex.def Info: fprtpr-eps-converted-to.pdf  used on input line 433.
 (pdftex.def)             Requested size: 516.0pt x 360.95073pt.
 Package epstopdf Info: Source file: <tf.eps>
-(epstopdf)                    date: 2019-03-15 18:11:02
-(epstopdf)                    size: 5373257 bytes
+(epstopdf)                    date: 2019-03-22 15:02:27
+(epstopdf)                    size: 5411506 bytes
 (epstopdf)             Output file: <tf-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-03-15 18:24:59
-(epstopdf)                    size: 1137674 bytes
+(epstopdf)                    date: 2019-03-22 15:03:12
+(epstopdf)                    size: 1214308 bytes
 (epstopdf)             Command: <epstopdf --outfile=tf-eps-converted-to.pdf tf.
 eps>
-(epstopdf)             \includegraphics on input line 527.
+(epstopdf)             \includegraphics on input line 447.
 Package epstopdf Info: Output file is already uptodate.
-<tf-eps-converted-to.pdf, id=142, 570.13pt x 246.9225pt>
+
+
+pdfTeX warning: pdflatex.exe (file ./tf-eps-converted-to.pdf): PDF inclusion: f
+ound PDF version <1.7>, but at most version <1.5> allowed
+<tf-eps-converted-to.pdf, id=142, 657.45625pt x 311.1625pt>
 File: tf-eps-converted-to.pdf Graphic file (type pdf)
 <use tf-eps-converted-to.pdf>
-Package pdftex.def Info: tf-eps-converted-to.pdf  used on input line 527.
-(pdftex.def)             Requested size: 232.19843pt x 100.56444pt.
+Package pdftex.def Info: tf-eps-converted-to.pdf  used on input line 447.
+(pdftex.def)             Requested size: 232.19843pt x 109.89133pt.
 Package epstopdf Info: Source file: <ml.eps>
-(epstopdf)                    date: 2019-03-15 18:18:05
-(epstopdf)                    size: 68804 bytes
+(epstopdf)                    date: 2019-03-22 14:54:11
+(epstopdf)                    size: 68857 bytes
 (epstopdf)             Output file: <ml-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-03-15 18:25:03
-(epstopdf)                    size: 30323 bytes
+(epstopdf)                    date: 2019-03-22 15:03:13
+(epstopdf)                    size: 30338 bytes
 (epstopdf)             Command: <epstopdf --outfile=ml-eps-converted-to.pdf ml.
 eps>
-(epstopdf)             \includegraphics on input line 535.
+(epstopdf)             \includegraphics on input line 455.
 Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex.exe (file ./ml-eps-converted-to.pdf): PDF inclusion: f
+ound PDF version <1.7>, but at most version <1.5> allowed
 <ml-eps-converted-to.pdf, id=143, 541.02126pt x 496.85625pt>
 File: ml-eps-converted-to.pdf Graphic file (type pdf)
 <use ml-eps-converted-to.pdf>
-Package pdftex.def Info: ml-eps-converted-to.pdf  used on input line 535.
-(pdftex.def)             Requested size: 232.19843pt x 213.2422pt.
+Package pdftex.def Info: ml-eps-converted-to.pdf  used on input line 455.
+(pdftex.def)             Requested size: 154.80157pt x 142.15894pt.
 
-Overfull \hbox (1.85895pt too wide) in paragraph at lines 548--548
+Overfull \hbox (1.85895pt too wide) in paragraph at lines 468--468
 []\OT1/ptm/b/n/8 Model| 
  []
 
 
-Overfull \hbox (2.78154pt too wide) in paragraph at lines 548--548
+Overfull \hbox (2.78154pt too wide) in paragraph at lines 468--468
 []\OT1/ptm/b/n/8 k=10| 
  []
 
 
-Overfull \hbox (2.78154pt too wide) in paragraph at lines 548--548
+Overfull \hbox (2.78154pt too wide) in paragraph at lines 468--468
 []\OT1/ptm/b/n/8 k=20| 
  []
 
 
-Overfull \hbox (3.93608pt too wide) in paragraph at lines 548--549
+Overfull \hbox (2.78154pt too wide) in paragraph at lines 468--468
+[]\OT1/ptm/b/n/8 k=30| 
+ []
+
+
+Overfull \hbox (2.78154pt too wide) in paragraph at lines 468--468
+[]\OT1/ptm/b/n/8 k=40| 
+ []
+
+
+Overfull \hbox (3.93608pt too wide) in paragraph at lines 468--469
 []\OT1/ptm/b/n/8 k=100| 
  []
 
 
-Overfull \hbox (5.13083pt too wide) in paragraph at lines 550--550
+Overfull \hbox (5.13083pt too wide) in paragraph at lines 470--470
 []\OT1/ptm/m/n/8 Time(s)| 
  []
 
 
-Overfull \hbox (3.77364pt too wide) in paragraph at lines 550--550
+Overfull \hbox (3.77364pt too wide) in paragraph at lines 470--470
 []\OT1/ptm/m/n/8 27.55| 
  []
 
 
-Overfull \hbox (3.77364pt too wide) in paragraph at lines 550--550
+Overfull \hbox (3.77364pt too wide) in paragraph at lines 470--470
 []\OT1/ptm/m/n/8 20.12| 
  []
 
 
-Overfull \hbox (3.77364pt too wide) in paragraph at lines 550--550
+Overfull \hbox (3.77364pt too wide) in paragraph at lines 470--470
 []\OT1/ptm/m/n/8 29.09| 
  []
 
 
-Overfull \hbox (3.77364pt too wide) in paragraph at lines 550--550
+Overfull \hbox (3.77364pt too wide) in paragraph at lines 470--470
 []\OT1/ptm/m/n/8 30.53| 
  []
 
 
-Overfull \hbox (3.77364pt too wide) in paragraph at lines 550--550
+Overfull \hbox (3.77364pt too wide) in paragraph at lines 470--470
 []\OT1/ptm/m/n/8 48.00| 
  []
 
 
-Overfull \hbox (3.77364pt too wide) in paragraph at lines 550--550
+Overfull \hbox (3.77364pt too wide) in paragraph at lines 470--470
 []\OT1/ptm/m/n/8 73.62| 
  []
 
 
-Overfull \hbox (4.92818pt too wide) in paragraph at lines 550--550
+Overfull \hbox (4.92818pt too wide) in paragraph at lines 470--470
 []\OT1/ptm/m/n/8 141.33| 
  []
 
 
-Overfull \hbox (4.92818pt too wide) in paragraph at lines 550--551
+Overfull \hbox (4.92818pt too wide) in paragraph at lines 470--471
 []\OT1/ptm/m/n/8 309.51| 
  []
 
-[6]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7 <./clnn-batch-eps-converted-to.pdf> <./tf-eps-converted-to.pdf>]
-(conference_041818.bbl)
+[6] (conference_041818.bbl [7 <./fprtpr-eps-converted-to.pdf>])
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -768,32 +777,32 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[8 <./ml-eps-converted-to.pdf>] (conference_041818.aux) ) 
+[8 <./tf-eps-converted-to.pdf> <./ml-eps-converted-to.pdf>]
+(conference_041818.aux) ) 
 Here is how much of TeX's memory you used:
- 4689 strings out of 492981
- 66654 string characters out of 3141907
- 150217 words of memory out of 3000000
- 8461 multiletter control sequences out of 15000+200000
+ 4683 strings out of 492946
+ 66545 string characters out of 3141293
+ 152100 words of memory out of 3000000
+ 8490 multiletter control sequences out of 15000+200000
  42880 words of font info for 87 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,11n,35p,1560b,532s stack positions out of 5000i,500n,10000p,200000b,50000s
-{E:/CTeX/UserData/font
-s/enc/dvips/base/8r.enc}<E:/CTeX/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.p
-fb><E:/CTeX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><E:/CTeX/MiKTeX/fo
-nts/type1/public/amsfonts/cm/cmmi5.pfb><E:/CTeX/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmmi6.pfb><E:/CTeX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><E:/C
-TeX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><E:/CTeX/MiKTeX/fonts/type1
-/public/amsfonts/cm/cmr10.pfb><E:/CTeX/MiKTeX/fonts/type1/public/amsfonts/cm/cm
-r6.pfb><E:/CTeX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><E:/CTeX/MiKTeX/
-fonts/type1/public/amsfonts/cm/cmr8.pfb><E:/CTeX/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmsy10.pfb><E:/CTeX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><E:
-/CTeX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><E:/CTeX/MiKTeX/fonts/typ
-e1/urw/times/utmb8a.pfb><E:/CTeX/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><E:/C
-TeX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><E:/CTeX/MiKTeX/fonts/type1/urw/tim
-es/utmri8a.pfb>
-Output written on conference_041818.pdf (8 pages, 3070466 bytes).
+{E:/CTeX/MiKTeX/fonts/enc/dvips/base/8r.enc}<E:/CTeX/M
+iKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><E:/CTeX/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmmi10.pfb><E:/CTeX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5
+.pfb><E:/CTeX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><E:/CTeX/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmmi7.pfb><E:/CTeX/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmmi8.pfb><E:/CTeX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><E:/
+CTeX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><E:/CTeX/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmr7.pfb><E:/CTeX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr
+8.pfb><E:/CTeX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/CTeX/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmsy7.pfb><E:/CTeX/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmsy8.pfb><E:/CTeX/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><E:/CTeX/M
+iKTeX/fonts/type1/urw/times/utmbi8a.pfb><E:/CTeX/MiKTeX/fonts/type1/urw/times/u
+tmr8a.pfb><E:/CTeX/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on conference_041818.pdf (8 pages, 2687670 bytes).
 PDF statistics:
- 351 PDF objects out of 1000 (max. 8388607)
+ 353 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
