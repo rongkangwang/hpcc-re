@@ -90,6 +90,10 @@ N.~A. Saqib, Y.~SHAKEEL, M.~A. Khan, H.~MEHMOOD, and M.~Zia, ``An effective
   Electrical Engineering \& Computer Sciences}, vol.~25, no.~2, pp. 888--900,
   2017.
 
+\bibitem{haris2018analysis}
+M.~Haris \emph{et~al.}, ``Analysis and classification of voip traffic for
+  mobile devices,'' 2018.
+
 \bibitem{5}
 R.~Alshammari and A.~N. Zincir-Heywood, ``Identification of voip encrypted
   traffic using a machine learning approach,'' \emph{Journal of King Saud
@@ -106,8 +110,20 @@ T.~Qin, L.~Wang, Z.~Liu, and X.~Guan, ``Robust application identification
   methods for p2p and voip traffic classification in backbone networks,''
   \emph{Knowledge-Based Systems}, vol.~82, pp. 152--162, 2015.
 
+\bibitem{lin2018rnn}
+Z.~Lin, Y.~Huang, and J.~Wang, ``Rnn-sm: Fast steganalysis of voip streams
+  using recurrent neural network,'' \emph{IEEE Transactions on Information
+  Forensics and Security}, vol.~13, no.~7, pp. 1854--1868, 2018.
+
 \bibitem{1}
 Z.~Wang, ``The applications of deep learning on traffic identification,'' 2015.
+
+\bibitem{wang2017end}
+W.~Wang, M.~Zhu, J.~Wang, X.~Zeng, and Z.~Yang, ``End-to-end encrypted traffic
+  classification with one-dimensional convolution neural networks,'' in
+  \emph{2017 IEEE International Conference on Intelligence and Security
+  Informatics (ISI)}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2017, pp.
+  43--48.
 
 \bibitem{6}
 Y.~Lecun, L.~Bottou, Y.~Bengio, and P.~Haffner, ``Gradient-based learning
